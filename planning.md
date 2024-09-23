@@ -1,4 +1,4 @@
-# Pseudo-Code
+# Planning
 ## Menu
 print("Welcome to your NPC Generator")
 

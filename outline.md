@@ -1,5 +1,5 @@
 # Criteria
-Current Commit Count: 2/20
+Current Commit Count: 3/20
 
 ## 3 classes
 Manager
