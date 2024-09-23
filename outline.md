@@ -1,15 +1,16 @@
 # Criteria
+Current Commit Count: 1/20
 
 ## 3 classes
 Manager
 Generator
 
 ## 6 Functions
-1. Generate
-2. Delete
-3. View 
-4. Learn
-5. 
+1. Generate a Character
+2. Save a Character
+3. Delete a Character
+4. View Saved Characters
+5. Learn about Generation
 6. 
 
 ## Libraries
@@ -31,7 +32,7 @@ What would you like to do?
 - gender
 - trait
 - background
-- name (from trait)
+- name (from identity)
 - title (from background)
 - save y/n
 
@@ -45,7 +46,7 @@ What would you like to do?
 
 ### Learn about Generation
 What would you like to know more about? 
-- genre
+- genre (blurb)
 - gender
 - trait
 - background
