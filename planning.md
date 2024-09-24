@@ -61,8 +61,6 @@ answers = inquirer.prompt(questions)
 finished_character = Generator
 <!-- Function for finished_character will be written in generator class -->
 
-(f"{chosen_genre} {chosen_gender} {chosen_trait} {chosen_background} named {chosen_name} {chosen_title}.")
-
 finished_character = (f"{chosen_genre} {chosen_identity} {chosen_trait} {chosen_background} named {chosen_name} {chosen_title}.") 
 print finished_character
 
