@@ -13,7 +13,7 @@ Generator
 5. Learn about Generation
 6. 
 
-## Libraries
+## 4 External Libraries
 - Inquirer
 - Typer
 - 
@@ -38,12 +38,12 @@ What would you like to do?
     - Female = ["Abigail", "Bianca", "Charlotte", "Diana", "Emily", "Fiona", "Grace", "Hannah", "Isabella", "Julia", "Katherine", "Lily", "Mia", "Nora", "Olivia", "Penelope", "Quinn", "Rebecca", "Sophia", "Tessa", "Uma", "Victoria", "Wendy", "Xia", "Yvonne", "Zoe"]
     - Neutral = ["Avery", "Blake", "Cameron", "Dakota", "Ellis", "Finley", "Gray", "Hayden", "Indigo", "Jordan", "Kai", "Logan", "Morgan", "Noel", "Oakley", "Phoenix", "Quinn", "Riley", "Skyler", "Taylor", "Ulan", "Val", "Wyatt", "Xiao", "Yi", "Zayne"]
 - title (from background)
-    - Warrior = ["the Valiant.", "the Fearless.", "the Conqueror.", "the Defiant.", "the Protector.", "the Mercenary."]
-    - Expert = ["the Mastermind.", "the Viruoso.", "the Scholar.", "the Adept.", "the Prodigy.", "the Oracle."]
-    - Criminal = ["the Outlaw.", "the Bandit.", "the Trickster.", "the Sinner.", "the Scoundrel.", "the Shadow."]
-    - Merchant = ["the Broker.", "the Dealer.", "the Purveyor.", "the Prince.", "the Vendor.", "the Bargain Master."]
-    - Wanderer = ["the Recluse.", "the Nomad.", "the Explorer.", "the Drifter.", "the Wayfarer.", "the Adventerous."]
-    - Believer = ["the Faithful.", "the Devoted.", "the Seeker.", "the Zealot.", "the Prophet.", "the Enlightened."]
+warrior_background = ["Valiant", "Fearless", "Conqueror", "Defiant", "Protector", "Mercenary."]
+expert_background = ["Mastermind", "the Viruoso", "the Scholar", "Adept", "Prodigy", " Oracle"]
+criminal_background = ["Outlaw", "Bandit", "Trickster", "Sinner", "Scoundrel", "Shadow"]
+merchant_background = ["Broker", "Dealer", "Purveyor", "Prince", "Vendor", "Bargain Master"]
+wanderer_background = ["Recluse", "Nomad", "Explorer", "Drifter", "Wayfarer", "Adventerous"]
+believer_background = ["Faithful", "Devoted", "Seeker", "Zealot", "Prophet", "Enlightened"]
 - save y/n
 
 ### Delete a Character

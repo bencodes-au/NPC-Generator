@@ -1,6 +1,7 @@
 from characters_functions import generate_character, delete_character, view_character, view_categories, save_and_exit
 from characters_class import Characters
 import inquirer
+import typer
 
 print("Welcome to your NPC Generator")
 
@@ -13,7 +14,7 @@ while choice != "Save and Exit":
             "choice",
             message="What would you like to do?",
             choices=["Generate a Character", "Delete a Character",
-                     "View Saved Characters", "Learn about Generation", "Save and Exit"],
+                     "View Saved Characters", "Learn More About Generation", "Save and Exit"],
         ),
 
     ]
@@ -37,33 +38,6 @@ while choice != "Save and Exit":
 
 print("See you next time!")
 
-# def menu():
-#     print("Enter 1 to Generate a Character")
-#     print("Enter 2 to Delete a Character")
-#     print("Enter 3 to View Saved Characters")
-#     print("Enter 4 to Learn about Generation")
-#     print("Enter 5 to Save and Exit")
-
-#     choice = input("Enter your choice: ")
-
-#     return choice
-
-
-# choice = ""
-
-# while choice != "5":
-#     choice = menu()
-
-#     if choice == "1":
-#         generate_character()
-#     elif choice == "2":
-#         delete_character()
-#     elif choice == "3":
-#         view_character()
-#     elif choice == "4":
-#         view_categories()
-#     elif choice == "5":
-#         save_and_exit()
-#         print("Exiting...")
-#     else:
-#         print("Invalid choice")
+# typer
+# if __name__ == "__main__":
+#     typer.run(main)
