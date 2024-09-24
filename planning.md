@@ -149,3 +149,53 @@ elif answers == identity
     print identity_blurb
 else: 
     choice = menu()
+
+
+
+## Notes
+questions = [
+    inquirer.List(
+        "genre",
+        message="What genre is the world?",
+        choices=["Fantasy", "Sci-fi", "Crime", "Horror", "Heroes", "Western"],
+    ),
+
+    inquirer.List(
+        "identity",
+        message="How does this character identify?",
+        choices=["Male", "Female", "Neutral"],
+    ),
+
+
+    inquirer.List(
+        "trait",
+        message="What is this character's main trait?",
+        choices=["Strong", "Agile", "Hardy", "Smart", "Wise", "Charming"],
+    ),
+
+
+    inquirer.List(
+        "background",
+        message="What is this character's background?",
+        choices=["Warrior", "Expert", "Criminal", "Merchant", "Hermit", "Believer"],
+    ),
+]
+
+answers = inquirer.prompt(questions)
+
+chosen_genre = ""
+
+if "genre" == "Fantasy":
+    chosen_genre == "From a life of swords and sorcery, "
+elif "genre" == "Sci-fi":
+    chosen_genre == "From a life among the stars, "
+elif "genre" == "Crime":
+    chosen_genre == "From a life of hunting crooks, "
+elif "genre" == "Horror":
+    chosen_genre == "From a life that was about to take a horrific turn, "
+elif "genre" == "Heroes":
+    chosen_genre == "From a life as a caped crusader, "
+elif "genre" == "Western":
+    chosen_genre == "From a life of darn tootin' gunslinging, "
+else:
+    print("An error has occurred within Genre.")
