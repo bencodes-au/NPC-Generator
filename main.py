@@ -1,5 +1,5 @@
 from characters_functions import generate_character, delete_character, view_character, view_categories, save_and_exit
-from characters_class import Characters
+from Saved_Characters_class import Saved_Characters
 import inquirer
 import typer
 

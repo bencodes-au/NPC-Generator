@@ -1,5 +1,6 @@
 import inquirer
 import random
+from Saved_Characters_class import Saved_Characters
 
 male_name = ["Alex", "Ben", "Chris", "Daniel", "Elijah", "Fred", "Gabriel", "Henry", "Isaac", "John", "Kyle",
              "Lucas", "Matthew", "Nathan", "Oliver", "Patrick", "Quentin", "Ryan", "Sam", "Thomas", "Umar",
@@ -16,7 +17,7 @@ neutral_name = ["Avery", "Blake", "Cameron", "Dakota", "Ellis", "Finley", "Gray"
 warrior_background = ["Valiant", "Fearless",
                       "Conqueror", "Defiant", "Protector", "Mercenary."]
 
-expert_background = ["Mastermind", "the Viruoso",
+expert_background = ["Mastermind", "the Virtuoso",
                      "the Scholar", "Adept", "Prodigy", " Oracle"]
 
 criminal_background = ["Outlaw", "Bandit",
@@ -28,8 +29,12 @@ merchant_background = ["Broker", "Dealer",
 wanderer_background = ["Recluse", "Nomad",
                        "Explorer", "Drifter", "Wayfarer", "Adventerous"]
 
+
 believer_background = ["Faithful", "Devoted",
                        "Seeker", "Zealot", "Prophet", "Enlightened"]
+
+saved_characters = Saved_Characters()
+show_characters = Saved_Characters
 
 
 def generate_character():
@@ -123,9 +128,28 @@ def generate_character():
 
     random_title = random.choice(title)
 
-    print(f"{chosen_genre} {chosen_identity} {chosen_trait} {chosen_background} called {random_name} the {random_title}.")
+    character = (
+        f"{chosen_genre} {chosen_identity} {chosen_trait} {chosen_background} called {random_name} the {random_title}.")
 
-    print("Returning to Menu")
+    print(character)
+
+    saved_character = Saved_Characters
+
+    saving = [
+        inquirer.List(
+            "save",
+            message="Would you like to save this character?",
+            choices=["Save", "Don't Save"],
+        ),
+    ]
+
+    answer = inquirer.prompt(saving)
+
+    if answer["save"] == "Save":
+        saved_characters.save_character(character)
+        print("Character saved!")
+    else:
+        print("Character not saved.")
 
 
 def delete_character():
@@ -133,7 +157,8 @@ def delete_character():
 
 
 def view_character():
-    print("View Characters")
+    print("Viewing Characters")
+    saved_characters.show_characters()
 
 
 def view_categories():
