@@ -1,20 +1,24 @@
-from characters_functions import generate_character, delete_character, view_character, view_categories, save_and_exit
-from Saved_Characters_class import Saved_Characters
+from generator import Generator
+from manager import Manager
+
 import inquirer
 import typer
 
 print("Welcome to your NPC Generator")
 
+manager = Manager()
+generator = Generator(manager)
+
 choice = ""
 
-while choice != "Save and Exit":
+while choice != "Exit Program":
 
     menu = [
         inquirer.List(
             "choice",
             message="What would you like to do?",
             choices=["Generate a Character", "Delete a Character",
-                     "View Saved Characters", "Learn More About Generation", "Save and Exit"],
+                     "View Saved Characters", "Learn More About Generation", "Exit Program"],
         ),
 
     ]
@@ -22,16 +26,16 @@ while choice != "Save and Exit":
     answers = inquirer.prompt(menu)
 
     if answers["choice"] == "Generate a Character":
-        generate_character()
+        generator.generate_character()
     elif answers["choice"] == "Delete a Character":
-        delete_character()
+        manager.delete_character()
     elif answers["choice"] == "View Saved Characters":
-        view_character()
+        manager.show_characters()
     elif answers["choice"] == "Learn More About Generation":
-        view_categories()
-    elif answers["choice"] == "Save and Exit":
-        save_and_exit()
-        choice = "Save and Exit"
+        # view_categories()
+        print("Viewing Categories")
+    elif answers["choice"] == "Exit Program":
+        choice = "Exit Program"
     else:
         print("Error in Menu")
 
