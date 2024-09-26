@@ -150,7 +150,3 @@ class Generator:
             print("Character saved!")
         else:
             print("Character not saved.")
-
-
-def view_categories():
-    print("Learning More")

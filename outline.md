@@ -1,22 +1,26 @@
 # Criteria
-Current Commit Count: 4/20
+Current Commit Count: 11/20
 
 ## 3 classes
 Manager
 Generator
+Categories
 
 ## 6 Functions
 1. Generate a Character
 2. Save a Character
 3. Delete a Character
-4. View Saved Characters
-5. Learn about Generation
-6. 
+4. Show a Character
+5. Save to File
+6. Load from File
+7. Learn More
++ init functions
 
 ## 4 External Libraries
-- Inquirer
-- Typer
-- 
+1. Inquirer
+2. Typer
+3.  
+4. 
 
 ## Read Me
 
@@ -31,7 +35,7 @@ What would you like to do?
 ### Generate a Character
 - Genre = ["Fantasy", "Sci-fi", "Crime", "Horror", "Heroes", "Western"]
 - Identity = ["Male", "Female", "Neutral"]
-- Trait = ["Strong", "Agile", "Hardy", "Smart", "Wise", "Charming"]
+- Trait = ["Strong", "Nimble", "Hardy", "Smart", "Wise", "Charming"]
 - Background = ["Warrior", "Expert", "Criminal", "Merchant", "Hermit", "Believer"]
 - Name (from identity)
     - Male = ["Alex", "Ben", "Chris", "Daniel", "Elijah", "Fred", "Gabriel", "Henry", "Isaac", "John", "Kyle", "Lucas", "Matthew", "Nathan", "Oliver", "Patrick", "Quentin", "Ryan", "Sam", "Thomas", "Umar", "Victor", "William", "Xavier", "Yuri", "Zach"]
@@ -45,11 +49,14 @@ merchant_background = ["Broker", "Dealer", "Purveyor", "Prince", "Vendor", "Barg
 wanderer_background = ["Recluse", "Nomad", "Explorer", "Drifter", "Wayfarer", "Adventerous"]
 believer_background = ["Faithful", "Devoted", "Seeker", "Zealot", "Prophet", "Enlightened"]
 - save y/n
+- if y, save to json
 
 ### Delete a Character
-- Enter character name 
-- Delete the character
-- Return to menu
+- Press Delete Character
+- Shows all saved characters
+- Choose to delete one or return to menu
+- Shows "Successfully Deleted"
+- Save Json
 
 ### View Saved Characters
 - Show saved characters
@@ -60,14 +67,15 @@ What would you like to know more about?
 - gender
 - trait
 - background
+- name
+- title
 - return to menu
  
 Upon selecting, loads a description of the category
-Returns to describe category menu
+Returns to menu
 
 ### Exit
 show exiting
-save current state to json file
 
 
 
