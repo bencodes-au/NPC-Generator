@@ -42,13 +42,16 @@ class Manager:
             inquirer.List(
                 'character',
                 message="Select a character to delete:",
-                choices=self.characters
+                choices=self.characters + ["Return to Menu"]
             )
         ]
 
         answer = inquirer.prompt(questions)
 
         character_to_delete = answer['character']
+
+        if character_to_delete == "Return to Menu":
+            menu_nav = "Menu"
 
         if character_to_delete in self.characters:
             self.characters.remove(character_to_delete)
