@@ -86,7 +86,7 @@ class Generator:
         elif answers["genre"] == "Western":
             chosen_genre = "From a life of darn tootin' gunslinging,"
         else:
-            print("An error has occurred within Genre.")
+            print("Error in Genre.")
 
         if answers["identity"] == "Male":
             chosen_identity = "he is a"
@@ -95,7 +95,7 @@ class Generator:
         elif answers["identity"] == "Neutral":
             chosen_identity = "they are a"
         else:
-            print("An error has occurred within Identity.")
+            print("Error in Identity.")
 
         chosen_trait = answers["trait"]
         chosen_background = answers["background"]

@@ -3,9 +3,11 @@ from manager import Manager
 from categories import Categories
 
 import inquirer
-import typer
+import emoji
+from colored import Fore, Back, Style
 
-print("Welcome to your NPC Generator")
+color: str = f'{Style.res_dim}{Fore.red}'
+print(f'{color}Welcome to the Character Generator{Style.reset}')
 
 manager = Manager()
 generator = Generator(manager)
@@ -38,11 +40,7 @@ while menu_nav != "Exit Program":
     elif answers["menu_nav"] == "Exit Program":
         menu_nav = "Exit Program"
     else:
-        print("Error in Menu")
+        print("Error Occurred: Returning to Menu")
 
 
-print("See you next time!")
-
-# typer
-# if __name__ == "__main__":
-#     typer.run(main)
+print(emoji.emojize("See you next time :red_heart:", variant="emoji_type"))
