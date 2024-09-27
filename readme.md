@@ -1,7 +1,7 @@
 # Welcome to my Character Generator
 
 # Requirements
-This app requires Python 3 to be used. The internal libraries have been downloaded into a Virtual Environment so nothing else requires installation. The libraries used within this program can be found in requirements.txt. 
+This app requires Python 3 to be used. The internal libraries have been downloaded into a Virtual Environment so nothing else requires installation. The libraries used within this program can be found in requirements.txt. This program is not powerful and should run on all windows or linux systems, regardless of their specifications. 
 
 ## How to Install and Run
 The depository for the code can be found at https://github.com/BenGormanCode/NPC-Generator.

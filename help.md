@@ -8,8 +8,9 @@ The depository for the code can be found at https://github.com/BenGormanCode/NPC
 To start the app, it can be run through the terminal with 'python3 main.py'. 
 
 ## Navigating
-Up, down, left, right can be used to navigate the menu.  
-Enter is used to confirm choices.  
+To enter your name, simply type it.  
+Up, down, left, right can be used to navigate the menu.    
+Enter is used to confirm choices.   
 
 ## Menu
 When you reach the menu, the user will be selected with these options. 
