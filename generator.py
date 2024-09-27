@@ -67,7 +67,7 @@ class Generator:
                 "background",
                 message="What is this character's background?",
                 choices=["Warrior", "Expert", "Criminal",
-                         "Merchant", "Hermit", "Believer"],
+                         "Merchant", "Wanderer", "Believer"],
             ),
         ]
 
