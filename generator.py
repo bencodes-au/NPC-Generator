@@ -1,6 +1,7 @@
 import inquirer
 import random
 from manager import Manager
+from colored import Fore, Back, Style
 
 male_name = ["Alex", "Ben", "Chris", "Daniel", "Elijah", "Fred", "Gabriel", "Henry", "Isaac", "John", "Kyle",
              "Lucas", "Matthew", "Nathan", "Oliver", "Patrick", "Quentin", "Ryan", "Sam", "Thomas", "Umar",
