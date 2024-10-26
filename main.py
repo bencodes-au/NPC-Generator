@@ -5,6 +5,7 @@ from username import Username
 
 import inquirer
 import emoji
+import random
 from colored import Fore, Back, Style
 
 Username.hello()
