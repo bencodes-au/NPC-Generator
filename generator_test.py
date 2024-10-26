@@ -1,5 +1,5 @@
 import pytest
-from generator import Generator  # Ensure that this import is correct
+from generator import Generator
 
 
 class FakeManager:
@@ -19,12 +19,10 @@ def test_generate_character_male_warrior(monkeypatch):
         "How does this character identify?": {"identity": "Male"},
         "What is this character's main trait?": {"trait": "Strong"},
         "What is this character's background?": {"background": "Warrior"},
-        # Add this line
         "Would you like to save this character?": {"save": "Save"}
     }
 
     def mock_prompt(questions):
-        # This assumes `questions` can be a list of question objects
         response = {}
         for question in questions:
             if question.message in answers:
