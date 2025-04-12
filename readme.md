@@ -4,7 +4,7 @@
 This app requires Python 3 to be used. The internal libraries have been downloaded into a Virtual Environment so nothing else requires installation. The libraries used within this program can be found in requirements.txt. This program is not powerful and should run on all windows or linux systems, regardless of their specifications. 
 
 ## How to Install and Run
-The depository for the code can be found at https://github.com/BenGormanCode/NPC-Generator.
+The repository for the code can be found at https://github.com/BenGormanCode/NPC-Generator.
 
 To start the app, it can be run through the terminal with 'python3 main.py'. 
 
